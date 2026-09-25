@@ -40,17 +40,46 @@ for i in range(len(matriz)):
         diag1 = matriz[j][0] + matriz[j][1] + matriz[j][2]
         diag2 = matriz[j][2] + matriz[j][1] + matriz[j][0]
         if j == 2:
-            linha.append(lin) 
+            linhas.append(lin) 
             colunas.append(col)
             diagonal1.append(diag1)
             diagonal2.append(diag2)
             lin = 0 
+            col = 0
 
-print(lin)
-print(linha)
-print(colunas)
-print(diagonal1)
-print(diagonal2)
+    
+print("Soma Linhas:")
+for i in range(len(linhas)):
+    print(linhas[i], end="; ")
 
-for i in range(len(matriz)):
-    print(matriz[i], end="; ")
+print("")
+print("Soma colunas:")
+for i in range(len(colunas)):
+    print(colunas[i], end="; ")
+
+print("")
+print("Soma Diagonal Principal:")
+for i in range(len(diagonal1)):
+    print(diagonal1[i], end="; ")
+
+print("")
+print("Soma Diagonal Secundária:")
+for i in range(len(diagonal2)):
+    print(diagonal2[i], end="; ")
+
+i = 0
+f = 0
+v = 0
+while i < len(matriz):
+    if linhas[i] == colunas[i] == diagonal1[i] == diagonal2[i]:
+        f+=1
+    else:
+        v+=1
+        break
+    i+=1
+
+print("")
+if v == 0:
+    print("Essa Matriz Forma um quadrado mágico!")
+else:
+    print("Essa Matriz NÃO Forma um quadrado mágico!")
