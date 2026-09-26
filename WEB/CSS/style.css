@@ -1,0 +1,13 @@
+.negrito{
+    font-weight: bold;
+}
+.azulCentralizado{
+    color: blue;
+    text-align: center;
+}
+.italico{
+    font-style: italic;
+}
+#rosa{
+    color: pink;
+}
