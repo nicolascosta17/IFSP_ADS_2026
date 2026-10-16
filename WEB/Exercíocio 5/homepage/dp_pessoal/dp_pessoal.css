@@ -1,0 +1,44 @@
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.imagens{
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+a, li, button, span{
+    font-size: 16px;
+    text-decoration: none;
+    color: #62575a;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.navegador{
+    list-style: none;
+}
+
+.navegador li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navegador li a:hover{
+    color: #650c25;   
+}
