@@ -11,7 +11,6 @@ print("Letra: ",letra_eliminada)
 while i < len(string) and cont == 0:
     if letra_eliminada == string[i]:
         string = string[:i] + string[i+1:]
-        print(string)
         cont+=1
     i+=1
 print("Palavra: ",string)
