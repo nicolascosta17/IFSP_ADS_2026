@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo básico GRID</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-areas: 'header header header';
+        }
+        div{
+            background-color: yellow;
+            border: 1px black solid;
+        }
+        #d1{
+            grid-row: 1;
+            grid-column: 1;
+        }
+        #d2{
+            grid-area: nav;
+        }
+        #d3{
+            grid-area: main;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        #d4{
+            grid-area: ad;
+        }
+        #d5{
+            grid-row: 2;
+            grid-column: 2/4;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+    <div id="d4">4</div>
+    <div id="d5">5</div>
+</body>
+</html>
